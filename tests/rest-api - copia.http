@@ -1,0 +1,44 @@
+GET http://localhost/pp2/public/index.php/types
+Accept: application/json
+
+###
+
+//Usuario logueado correctamente
+POST http://localhost/pp2/public/index.php/api/token
+Content-Type: application/json
+
+{
+  "username": "darth",
+  "password": "abc"
+}
+
+
+###
+//usuario no logueado
+POST http://localhost/pp2/public/index.php/api/token
+Content-Type: application/json
+
+{
+  "username": "darth",
+  "password": "abcd"
+}
+
+
+###
+//Recuperar listado de pacientes
+POST http://localhost/pp2/public/index.php/pacientes
+Accept: application/json
+
+
+
+###
+
+
+//Recuperar listado de eventos
+POST http://localhost/pp2/public/index.php/events
+Accept: application/json
+
+
+
+
+
